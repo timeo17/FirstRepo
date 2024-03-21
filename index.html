@@ -42,10 +42,16 @@
       }
       p {
       }
+      #planet {
+        width: 70px;
+        height: 70px;
+        position: fixed;
+      }
     </style>
   </head>
   <body>
     <main>
+      <img src="planeteterre.gif" id="planet" />
       <h1>le système solaire et notre galaxie</h1>
       <section>
         <p>
@@ -257,5 +263,17 @@
     zoom("soleil", "500px");
     zoom("toutelesplanete", "500px");
     zoom("Earthrotation", "300px");
+
+    let planet = document.getElementById("planet");
+    for (let index = 0; index < document.body.clientWidth - 80; index++) {
+      setTimeout(() => {
+        planet.style.left = index + "px";
+      }, index * 5);
+
+      setTimeout(() => {
+        planet.style.left = "unset";
+        planet.style.right = index + "px";
+      }, (index + document.body.clientWidth - 80) * 5);
+    }
   </script>
 </html>
