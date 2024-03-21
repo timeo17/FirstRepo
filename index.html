@@ -55,11 +55,21 @@
         </p>
       </section>
       <section>
-        <p>
-            Cliquer sur les image pour les agrandir.
-        </p>
+        <div>
+          <div>
+            <section>
+              <p>
+                Cliquer sur les image pour les agrandir.
+              </p>
+            </section>
+          </div>
+          <div>
+            <img src="Earth_rotation.gif"
+            id="Earthrotation"/>
+          </div>
+        </div>
       </section>
-      <h2>Toutes planètes porte un nom, il y a:</h2>
+      <h2>Toutes les planètes portent un nom, il y a:</h2>
       <div>
         <div>
           <section>
@@ -82,11 +92,11 @@
       <section>
         <h3>
           Il éxiste deux types de planètes: Les planètes gazeuses puis les
-          planètes telluriques Dans les planètes gazeuses se trouve:
+          planètes telluriques Dans les planètes gazeuses se trouvent:
         </h3>
       </section>
       <p>Jupiter, Saturne, Uranus et Neptune.</p>
-      <h3>Puis dans les planètes telluriques se trouve:</h3>
+      <h3>Puis dans les planètes telluriques se trouvent:</h3>
       <p>Mercure, Mars, Vénus et la Terre</p>
       <h6>Définitions</h6>
       <h4>Planète gazeuse:</h4>
@@ -132,7 +142,7 @@
       </div>
       <h2>
         Maintenant, nous allons parler plus globalement du système solaire en
-        lui même(Sa taille, ses composition...)
+        lui même(Sa taille, ses compositions...)
       </h2>
       <div>
         <div>
@@ -190,7 +200,7 @@
               La galaxie la plus proche de la Voie lactée se nomme
               Andromède.Elle se trouve à 2,5 al(année lumières) de la Voie
               lactée. En plus de ça, dans quatre milliard d'années, ces deux
-              galaxie entrerons en collision à plus de 420 000 km/h.
+              galaxies entreront en collision à plus de 420 000 km/h.
             </p>
           </section>
         </div>
@@ -231,23 +241,24 @@
     >
   </body>
   <script>
-    function zoom(imageId) {
+    function zoom(imageId, size) {
       let image = document.getElementById(imageId);
       image.addEventListener("click", () => {
-        if (image.style.width === "1000px") {
-          image.style.width = "500px";
+        if (image.style.width === "950px") {
+          image.style.width = size;
         } else {
-          image.style.width = "1000px";
+          image.style.width = "950px";
         }
       });
     }
 
-    zoom("black-hole");
-    zoom("andromede");
-    zoom("voielactéevudelaterre");
-    zoom("voielactéevudelespace");
-    zoom("systemsolar2");
-    zoom("soleil");
-    zoom("toutelesplanete");
+    zoom("black-hole","500px");
+    zoom("andromede","500px");
+    zoom("voielactéevudelaterre","500px");
+    zoom("voielactéevudelespace","500px");
+    zoom("systemsolar2","500px");
+    zoom("soleil","500px");
+    zoom("toutelesplanete","500px");
+    zoom("Earthrotation","300px");
   </script>
 </html>
