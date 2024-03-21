@@ -5,7 +5,7 @@
     <title>LearnSystèmeSolaire</title>
     <style>
       h1 {
-        color:lightskyblue;
+        color: lightskyblue;
         font-size: 80px;
         background-image: url("eessppaaccee.jpg");
         background-size: cover;
@@ -53,16 +53,18 @@
         height: 70px;
         position: fixed;
       }
-      li{
+      li {
         font-family: Arial, Helvetica, sans-serif;
       }
-      body{
+      body {
         padding-left: 120px;
         padding-right: 120px;
         padding-bottom: 40px;
       }
-      a{
-        font-family:'Times New Roman', Times, serif;
+      a {
+        font-family: "Times New Roman", Times, serif;
+      }
+      #link-container {
         text-align: center;
       }
     </style>
@@ -70,7 +72,12 @@
   <body>
     <main>
       <img src="planeteterre.gif" id="planet" />
-      <h1>le système solaire et notre galaxie</h1>
+      <h1 id="atthetop-title">Le système solaire et notre galaxie</h1>
+      <a href="#planet-title"> planètes </a>
+      <a href="#sun-title"> soleil </a>
+      <a href="#sytemsolar-title"> système solaire </a>
+      <a href="#galaxy-title"> galaxie </a>
+      <a href="#black-hole-title"> trou-noir </a>
       <section>
         <p>
           Sur ce site nous allons parler des différentes planètes du système
@@ -90,7 +97,7 @@
           </div>
         </div>
       </section>
-      <h2>Toutes les planètes portent un nom, il y a:</h2>
+      <h2 id="planet-title">Toutes les planètes portent un nom, il y a:</h2>
       <div>
         <div>
           <section>
@@ -137,7 +144,7 @@
           croûte).Sa densité est donc relativement élevée
         </p>
       </section>
-      <h2>
+      <h2 id="sun-title">
         Maintenant nous allons parler de l'étoile de notre système solaire, Le
         Soleil
       </h2>
@@ -161,7 +168,7 @@
           <img src="soleil.jpg" id="soleil" />
         </div>
       </div>
-      <h2>
+      <h2 id="sytemsolar-title">
         Maintenant, nous allons parler plus globalement du système solaire en
         lui même(Sa taille, ses compositions...)
       </h2>
@@ -183,7 +190,9 @@
           <img src="systemesolairebas.jpg" id="systemsolar2" />
         </div>
       </div>
-      <h2>Notre système solaire se trouve dans une galaxie, La voie lactée.</h2>
+      <h2 id="galaxy-title">
+        Notre système solaire se trouve dans une galaxie, La voie lactée.
+      </h2>
 
       <div>
         <section>
@@ -236,7 +245,7 @@
         <div>
           <div>
             <section>
-              <p>
+              <p id="black-hole-title">
                 Au centre de notre galaxie se trouve un trou noir. Il se nomme
                 Sagittarius A, il se situe a 26 000 années lumières de la Terre.
                 Ce trou noir a une masse de 4,2 millions de fois celle du Soleil
@@ -248,6 +257,7 @@
             <img src="imagetrounoirdenotregalaxie.webp" id="black-hole" />
           </div>
         </div>
+        <a href="#atthetop-title"> revenir en haut de la page </a>
         <p>
           voici un lien qui vous mènera vers un autre site qui vous explique la
           différence entre notre système solaire et notre galaxie, la Voie
@@ -255,11 +265,13 @@
         </p>
       </section>
     </main>
-    <a
-      href="https://www.geo.fr/sciences/quelle-est-la-difference-entre-le-systeme-solaire-et-la-voie-lactee-212332"
-    >
-      Quelle est la différence entre le Système solaire et la Voie lactée ?</a
-    >
+    <div id="link-container">
+      <a
+        href="https://www.geo.fr/sciences/quelle-est-la-difference-entre-le-systeme-solaire-et-la-voie-lactee-212332"
+      >
+        Quelle est la différence entre le Système solaire et la Voie lactée ?</a
+      >
+    </div>
   </body>
   <script>
     function zoom(imageId, size) {
